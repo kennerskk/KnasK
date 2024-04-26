@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1714111351 source:c:\users\ken09\desktop\project\knask\main.cpp
+	"Game.hpp"
+
+1714044608 c:\users\ken09\desktop\project\knask\game.hpp
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+
+1714111677 source:c:\users\ken09\desktop\project\knask\game.cpp
+	"Game.hpp"
+
