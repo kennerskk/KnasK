@@ -45,7 +45,11 @@
 		<ExtraCommands>
 			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
 		</ExtraCommands>
-		<Unit filename="Untitled1.hpp" />
+		<Unit filename="Entity.cpp" />
+		<Unit filename="Entity.hpp" />
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.hpp" />
+		<Unit filename="Math.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>

@@ -1,4 +1,5 @@
 #include "Game.hpp"
+
 Game *game = nullptr;//make a pointer
 
 int main(int argc,char * argv[])
