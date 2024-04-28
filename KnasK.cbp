@@ -50,6 +50,8 @@
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.hpp" />
 		<Unit filename="Math.hpp" />
+		<Unit filename="detect.cpp" />
+		<Unit filename="detect.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>

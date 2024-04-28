@@ -6,6 +6,7 @@ public:
     Entity(SDL_Texture *p_tex,float p_x,float p_y);
     void skill();
     SDL_Rect getcurrentFrame();
+    SDL_Rect getcollidebox();
     SDL_Texture *getTexture();
     float getx();
     float gety();
@@ -13,6 +14,7 @@ public:
     void entityupdate(int p_speed);
 
 private:
+    SDL_Rect collidebox;
     movement movementx;
     movement movementy;
     SDL_Texture *tex;

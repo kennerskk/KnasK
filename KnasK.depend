@@ -1,24 +1,32 @@
 # depslib dependency file v1.0
-1714272040 source:c:\users\ken09\desktop\project\knask\main.cpp
+1714316764 source:c:\users\ken09\desktop\project\knask\main.cpp
 	"Game.hpp"
+	"detect.hpp"
 
-1714044608 c:\users\ken09\desktop\project\knask\game.hpp
+1714313424 c:\users\ken09\desktop\project\knask\game.hpp
 	<SDL.h>
 	<SDL_image.h>
 	<iostream>
 
-1714299739 source:c:\users\ken09\desktop\project\knask\game.cpp
+1714315927 source:c:\users\ken09\desktop\project\knask\game.cpp
 	"Game.hpp"
 	"Entity.hpp"
+	"detect.hpp"
 
-1714299670 source:c:\users\ken09\desktop\project\knask\entity.cpp
+1714317116 source:c:\users\ken09\desktop\project\knask\entity.cpp
 	"Entity.hpp"
 	<iostream>
 
-1714299872 c:\users\ken09\desktop\project\knask\entity.hpp
+1714315778 c:\users\ken09\desktop\project\knask\entity.hpp
 	<SDL.h>
 	<SDL_image.h>
 	"Math.hpp"
 
 1714269208 c:\users\ken09\desktop\project\knask\math.hpp
+
+1714315729 source:c:\users\ken09\desktop\project\knask\detect.cpp
+	"detect.hpp"
+
+1714315241 c:\users\ken09\desktop\project\knask\detect.hpp
+	<SDL.h>
 

@@ -7,6 +7,9 @@ Entity::Entity(SDL_Texture *p_tex,float p_x,float p_y)
     currentFrame.y = 0;
     currentFrame.w = 32;
     currentFrame.h = 32;
+
+    collidebox.w = 32;
+    collidebox.h = 32;
 }
 
 void Entity::skill(){
@@ -71,7 +74,11 @@ switch(event.type)//event type analysis
 }}
 
 void Entity::entityupdate(int p_speed){
+    collidebox.x = x;
+    collidebox.y = y;
     x += p_speed*(movementx.y-movementx.x);
     y += p_speed*(movementy.y-movementy.x);
 }
-
+SDL_Rect Entity::getcollidebox(){
+    return collidebox;
+}
