@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1714185965 source:c:\users\ken09\desktop\project\knask\main.cpp
+1714272040 source:c:\users\ken09\desktop\project\knask\main.cpp
 	"Game.hpp"
 
 1714044608 c:\users\ken09\desktop\project\knask\game.hpp
@@ -7,17 +7,18 @@
 	<SDL_image.h>
 	<iostream>
 
-1714234872 source:c:\users\ken09\desktop\project\knask\game.cpp
+1714285728 source:c:\users\ken09\desktop\project\knask\game.cpp
 	"Game.hpp"
 	"Entity.hpp"
 
-1714234893 source:c:\users\ken09\desktop\project\knask\entity.cpp
+1714286311 source:c:\users\ken09\desktop\project\knask\entity.cpp
 	"Entity.hpp"
 	<iostream>
 
-1714235166 c:\users\ken09\desktop\project\knask\entity.hpp
+1714286373 c:\users\ken09\desktop\project\knask\entity.hpp
 	<SDL.h>
+	<SDL_image.h>
 	"Math.hpp"
 
-1714224536 c:\users\ken09\desktop\project\knask\math.hpp
+1714269208 c:\users\ken09\desktop\project\knask\math.hpp
 

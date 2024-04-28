@@ -3,15 +3,13 @@
 SDL_Texture *playerTex;
 SDL_Rect srcR,dstR;
 
-Entity player;
-
 Game::Game()
 {}
 Game::~Game()
 {}
 void Game::init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen)
 {
-    player.speed = 5;
+
     int flags = 0;//declare flags
     if (fullscreen)
     {
@@ -43,14 +41,13 @@ void Game::handleEvent()
 {
     SDL_Event event;//declare variable for handle all event
     SDL_PollEvent(&event);//for i in event
+
     switch(event.type)//event type analysis
     {
+
         case SDL_QUIT:
             isRunning = false;//toggle running
             break;
-        case SDL_KEYDOWN:
-            player.skill();
-            player.movement(event,player);
         default:
             break;
     }
@@ -58,15 +55,8 @@ void Game::handleEvent()
 
 void Game::update()
 {
-
-
-    dstR.h = 150;
-    dstR.w = 150;
-    dstR.x = player.pos.x;
-    dstR.y = player.pos.y;
-    player.gravity(player);
-
-    std::cout << player.pos.x<<","<<player.pos.y << std::endl;
+    dstR.h = 32*4;
+    dstR.w = 32*4;
 }
 
 void Game::render()
