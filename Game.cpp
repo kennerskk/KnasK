@@ -2,7 +2,7 @@
 #include "Entity.hpp"
 SDL_Texture *playerTex;
 SDL_Rect srcR,dstR;
-
+Entity ken(playerTex,100,100);
 Game::Game()
 {}
 Game::~Game()
@@ -41,12 +41,16 @@ void Game::handleEvent()
 {
     SDL_Event event;//declare variable for handle all event
     SDL_PollEvent(&event);//for i in event
-
+    ken.movementt(event);
     switch(event.type)//event type analysis
     {
 
         case SDL_QUIT:
             isRunning = false;//toggle running
+            break;
+        case SDL_KEYDOWN:
+            ken.skill();
+            std::cout << "hi" << std::endl;
             break;
         default:
             break;
@@ -55,12 +59,15 @@ void Game::handleEvent()
 
 void Game::update()
 {
-    dstR.h = 32*4;
-    dstR.w = 32*4;
+    dstR.h = ken.getcurrentFrame().h*4;
+    dstR.w = ken.getcurrentFrame().w*4;
+    dstR.x = ken.getx();
+    dstR.y = ken.gety();
+
 }
 
 void Game::render()
-{
+{   ken.entityupdate(4);
     SDL_RenderClear(renderer);//refresh renderer
     SDL_RenderCopy(renderer,playerTex,NULL,&dstR);
     SDL_RenderPresent(renderer);//start render on renderer
